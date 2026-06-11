@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vista Examen</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+    }
+
+    nav {
+      background: #5b9bd5;
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      padding: 6px 10px;
+    }
+
+    nav a {
+      background: #4a8cc4;
+      color: white;
+      text-decoration: none;
+      padding: 6px 22px;
+      font-size: 14px;
+      border-radius: 4px 4px 0 0;
+      border-bottom: 2px solid #3a7ab0;
+    }
+
+    nav a:hover {
+      background: #3a7ab0;
+    }
+
+    main {
+      padding: 40px 60px;
+    }
+
+    .form-box {
+      background: #5b9bd5;
+      border-radius: 20px;
+      padding: 30px 40px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      max-width: 550px;
+    }
+
+    .fields {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+    }
+
+    .field-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .field-row label {
+      color: white;
+      font-size: 13px;
+      width: 65px;
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .field-row input {
+      flex: 1;
+      padding: 4px 8px;
+      border: none;
+      border-radius: 3px;
+      font-size: 13px;
+      background: white;
+    }
+
+    .btn-buscar {
+      background: white;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Conocenos</a>
+    <a href="#">Productos</a>
+    <a href="#">Registro</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <main>
+    <div class="form-box">
+      <div class="fields">
+        <div class="field-row">
+          <label>Web</label>
+          <input type="text" />
+        </div>
+        <div class="field-row">
+          <label>Nombre</label>
+          <input type="text" />
+        </div>
+        <div class="field-row">
+          <label>Apellido</label>
+          <input type="text" />
+        </div>
+      </div>
+      <button class="btn-buscar">Buscar</button>
+    </div>
+  </main>
+
+</body>
+</html>
